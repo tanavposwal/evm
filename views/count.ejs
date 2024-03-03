@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>EVM</title>
+  </head>
+  <body class="p-8 bg-gray-200">
+    <a href="/" class="text-blue-500 underline">home</a>
+    <div class="bg-white rounded-lg shadow-md p-8">
+      <h1 class="text-2xl font-bold mb-4">Election Count</h1>
+      <div class="grid grid-cols-2 gap-4">
+        <div
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md focus:outline-none"
+        >
+          BJP: <%= votes.bjp %>
+      </div>
+        <div
+          class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-md focus:outline-none"
+        >
+          INC: <%= votes.inc %>
+    </div>
+        <div
+          class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded-md focus:outline-none"
+        >
+          DMK: <%= votes.dmk %>
+  </div>
+        <div
+          class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-md focus:outline-none"
+        >
+          AITC: <%= votes.aitc %>
+</div>
+      </div>
+    </div>
+  </body>
+</html>
